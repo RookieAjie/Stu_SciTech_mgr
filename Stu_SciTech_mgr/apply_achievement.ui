@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>apply_Achievement</class>
+ <widget class="QWidget" name="apply_Achievement">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>269</width>
+    <height>342</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>269</width>
+    <height>342</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>269</width>
+    <height>342</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>申请界面</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/logo.png</normaloff>:/logo.png</iconset>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>10</y>
+     <width>221</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>楷体</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>申请添加科技成果</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>251</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>82</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>成  果  名  称：</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>56</y>
+     <width>131</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>请输入成果名称...</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>获得成果时间：</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="plainTextEdit">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>140</y>
+     <width>141</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="plainText">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>请输入成果简介...</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>140</y>
+     <width>86</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>简              介：</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="dateEdit">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>97</y>
+     <width>131</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="dateTime">
+    <datetime>
+     <hour>0</hour>
+     <minute>0</minute>
+     <second>0</second>
+     <year>2021</year>
+     <month>1</month>
+     <day>1</day>
+    </datetime>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+   <property name="date">
+    <date>
+     <year>2021</year>
+     <month>1</month>
+     <day>1</day>
+    </date>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>303</y>
+     <width>80</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pushButton
+{
+	background-color: #F8F8FF; /*背景色*/ 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; /*边界圆滑*/
+	border-color: #DCDCDC;
+	font: bold 14px;
+	min-width:2em;
+	color:black; /*字体颜色*/
+	font-family:宋体;
+	padding: 5px;
+}
+ 
+#pushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+#pushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+#pushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}</string>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>300</y>
+     <width>80</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pushButton_2
+{
+	background-color: #F8F8FF; /*背景色*/ 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; /*边界圆滑*/
+	border-color: #DCDCDC;
+	font: bold 14px;
+	min-width:2em;
+	color:black; /*字体颜色*/
+	font-family:宋体;
+	padding: 5px;
+}
+ 
+#pushButton_2:hover
+{
+	background-color: #ff0000;
+}
+ 
+#pushButton_2:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+#pushButton_2:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}</string>
+   </property>
+   <property name="text">
+    <string>确定</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="add_materials">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>250</y>
+     <width>111</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#add_materials
+{
+	background-color: #F0F8FF; /*背景色*/ 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; /*边界圆滑*/
+	border-color: #6495ED;
+	font: bold 14px;
+	min-width:2em;
+	color:black; /*字体颜色*/
+	font-family:楷体;
+	padding: 5px;
+}
+ 
+#add_materials:hover
+{
+	background-color: #00CED1;
+}
+ 
+#add_materials:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+#add_materials:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}</string>
+   </property>
+   <property name="text">
+    <string>添加证明材料</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

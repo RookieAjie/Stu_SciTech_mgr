@@ -1,0 +1,1010 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StuMainwindow</class>
+ <widget class="QWidget" name="StuMainwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>950</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>641</width>
+    <height>458</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>950</width>
+    <height>650</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>学生操作界面</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/logo.png</normaloff>:/logo.png</iconset>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>3</x>
+     <y>80</y>
+     <width>945</width>
+     <height>568</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>总页面</string>
+    </attribute>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>53</y>
+       <width>940</width>
+       <height>483</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="search_btn">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>3</y>
+       <width>80</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#search_btn{
+background-color: rgb(225, 225, 225);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;
+border-style: outset;
+}
+#search_btn:hover{
+background-color:rgb(229, 241, 251); 
+color: black;
+}
+#search_btn:pressed{
+background-color:rgb(204, 228, 247);
+border-style: inset;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>查询</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="sql_btnqiaotao">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>3</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#sql_btnqiaotao{
+background-color: rgb(170, 170, 225);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;
+border-style: outset;
+}
+#sql_btnqiaotao:hover{
+background-color:rgb(229, 241, 251); 
+color: black;
+}
+#sql_btnqiaotao:pressed{
+background-color: rgb(170, 170, 225);
+border-style: inset;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>仅显示学生信息</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>3</x>
+       <y>10</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 1px solid gray;/*设置边框的粗细，以及颜色*/
+border-radius: 10px;/*设置圆角的大小*/
+padding: 0 8px;/*如果没有内容光标在开始往后移动0.8像素点*/
+selection-background-color: darkgray;
+   </string>
+     </property>
+     <property name="placeholderText">
+      <string>支持学生姓名模糊查询！</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>8</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>楷体</family>
+       <pointsize>12</pointsize>
+       <underline>false</underline>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(240, 248 ,255);
+border: 1px solid gray;/*设置边框的粗细，以及颜色*/
+border-radius: 10px;/*设置圆角的大小*/
+padding: 0 8px;/*如果没有内容光标在开始往后移动0.8像素点*/
+selection-background-color: darkgray;
+   </string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="Line" name="line_7">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>47</y>
+       <width>951</width>
+       <height>5</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(176, 196 ,222);
+border: 1px solid gray;/*设置边框的粗细，以及颜色*/</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_7">
+     <property name="geometry">
+      <rect>
+       <x>820</x>
+       <y>3</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pushButton_7{
+background-color: rgb(255 ,170 ,0);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;
+border-style: outset;
+}
+#pushButton_7:hover{
+background-color:rgb(238, 238, 0); 
+color: black;
+}
+#pushButton_7:pressed{
+background-color:rgb(255 ,170 ,0);
+border-style: inset;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>导出数据至Excel</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>10</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#comboBox{
+	color:#666666;
+  	font-size:13px;
+  	padding: 1px 15px 1px 3px;
+ 	 border:1px solid rgba(228,228,228,1);
+     border-radius:5px 5px 0px 0px;
+}
+</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>全部学院</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>我的信息</string>
+    </attribute>
+    <widget class="QTableWidget" name="tableWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>933</width>
+       <height>126</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>830</x>
+       <y>160</y>
+       <width>101</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pushButton{
+background-color: rgb(225, 225, 225);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;
+border-style: outset;
+}
+#pushButton:hover{
+background-color:rgb(229, 241, 251); 
+color: black;
+}
+#pushButton:pressed{
+background-color:rgb(204, 228, 247);
+border-style: inset;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>查询</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>129</y>
+       <width>251</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 85, 0);</string>
+     </property>
+     <property name="text">
+      <string>Tip:科研小组号显示‘0’，表示未加入科研小组！</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>260</y>
+       <width>468</width>
+       <height>279</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/logo2.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>475</x>
+       <y>260</y>
+       <width>465</width>
+       <height>279</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/logo3.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>210</y>
+       <width>60</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>修改密码：</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>75</x>
+       <y>207</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 1px solid gray;/*设置边框的粗细，以及颜色*/
+border-radius: 10px;/*设置圆角的大小*/
+padding: 0 8px;/*如果没有内容光标在开始往后移动0.8像素点*/
+selection-background-color: darkgray;
+   </string>
+     </property>
+     <property name="placeholderText">
+      <string>请输入要修改的密码！</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>206</y>
+       <width>80</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pushButton_2{
+background-color: rgb(255 ,170 ,0);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;
+border-style: outset;
+}
+#pushButton_2:hover{
+background-color:rgb(238, 238, 0); 
+color: black;
+}
+#pushButton_2:pressed{
+background-color:rgb(255 ,170 ,0);
+border-style: inset;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>确认修改</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_5">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>255</y>
+       <width>940</width>
+       <height>5</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(176, 196 ,222);
+border: 1px solid gray;/*设置边框的粗细，以及颜色*/</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_8">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>145</y>
+       <width>940</width>
+       <height>5</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(176, 196 ,222);
+border: 1px solid gray;/*设置边框的粗细，以及颜色*/</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_applyForAchi">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>206</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#btn_applyForAchi{
+background-color: rgb(255 ,170 ,0);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;
+border-style: outset;
+}
+#btn_applyForAchi:hover{
+background-color:rgb(238, 238, 0); 
+color: black;
+}
+#btn_applyForAchi:pressed{
+background-color:rgb(255 ,170 ,0);
+border-style: inset;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>申请添加科技成果</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_18">
+     <property name="geometry">
+      <rect>
+       <x>468</x>
+       <y>260</y>
+       <width>5</width>
+       <height>278</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(176, 196 ,222);
+border: 1px solid gray;/*设置边框的粗细，以及颜色*/</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>科研小组及成果信息</string>
+    </attribute>
+    <widget class="QTableWidget" name="tableWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>56</y>
+       <width>244</width>
+       <height>481</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="tableWidget_4">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>56</y>
+       <width>690</width>
+       <height>481</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>9</y>
+       <width>91</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pushButton_4{
+background-color: rgb(225, 225, 225);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;
+border-style: outset;
+}
+#pushButton_4:hover{
+background-color:rgb(229, 241, 251); 
+color: black;
+}
+#pushButton_4:pressed{
+background-color:rgb(204, 228, 247);
+border-style: inset;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>查询</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_6">
+     <property name="geometry">
+      <rect>
+       <x>244</x>
+       <y>53</y>
+       <width>5</width>
+       <height>487</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(176, 196 ,222);
+border: 1px solid gray;/*设置边框的粗细，以及颜色*/</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_groupCount">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>15</y>
+       <width>208</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>楷体</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(240, 248 ,255);
+border: 1px solid gray;/*设置边框的粗细，以及颜色*/
+border-radius: 10px;/*设置圆角的大小*/
+padding: 0 8px;/*如果没有内容光标在开始往后移动0.8像素点*/
+selection-background-color: darkgray;
+   </string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_achievementCount">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>16</y>
+       <width>247</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>楷体</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(240, 248 ,255);
+border: 1px solid gray;/*设置边框的粗细，以及颜色*/
+border-radius: 10px;/*设置圆角的大小*/
+padding: 0 8px;/*如果没有内容光标在开始往后移动0.8像素点*/
+selection-background-color: darkgray;
+   </string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="Line" name="line_9">
+     <property name="geometry">
+      <rect>
+       <x>-2</x>
+       <y>50</y>
+       <width>942</width>
+       <height>5</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(176, 196 ,222);
+border: 1px solid gray;/*设置边框的粗细，以及颜色*/</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_6">
+     <property name="geometry">
+      <rect>
+       <x>814</x>
+       <y>5</y>
+       <width>111</width>
+       <height>43</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pushButton_6{
+background-color: rgb(255 ,170 ,0);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;
+border-style: outset;
+}
+#pushButton_6:hover{
+background-color:rgb(238, 238, 0); 
+color: black;
+}
+#pushButton_6:pressed{
+background-color:rgb(255 ,170 ,0);
+border-style: inset;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>申请绑定科技成果</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_4">
+    <attribute name="title">
+     <string>学院信息</string>
+    </attribute>
+    <widget class="QTableWidget" name="tableWidget_5">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>53</y>
+       <width>940</width>
+       <height>483</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_5">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>7</y>
+       <width>91</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pushButton_5{
+background-color: rgb(225, 225, 225);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;
+border-style: outset;
+}
+#pushButton_5:hover{
+background-color:rgb(229, 241, 251); 
+color: black;
+}
+#pushButton_5:pressed{
+background-color:rgb(204, 228, 247);
+border-style: inset;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>查询</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>261</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 1px solid gray;/*设置边框的粗细，以及颜色*/
+border-radius: 10px;/*设置圆角的大小*/
+padding: 0 8px;/*如果没有内容光标在开始往后移动0.8像素点*/
+selection-background-color: darkgray;
+   </string>
+     </property>
+     <property name="placeholderText">
+      <string>支持学院名称的模糊查询！</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_ColCount">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>10</y>
+       <width>281</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>楷体</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(240, 248 ,255);
+border: 1px solid gray;/*设置边框的粗细，以及颜色*/
+border-radius: 10px;/*设置圆角的大小*/
+padding: 0 8px;/*如果没有内容光标在开始往后移动0.8像素点*/
+selection-background-color: darkgray;
+   </string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="Line" name="line_11">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>47</y>
+       <width>942</width>
+       <height>5</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(176, 196 ,222);
+border: 1px solid gray;/*设置边框的粗细，以及颜色*/</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>63</y>
+     <width>673</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #ADEAEA ;
+border: 1px solid gray;/*设置边框的粗细，以及颜色*/</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>5</width>
+     <height>645</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(176, 196 ,222);
+border: 1px solid gray;/*设置边框的粗细，以及颜色*/</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_3">
+   <property name="geometry">
+    <rect>
+     <x>945</x>
+     <y>0</y>
+     <width>5</width>
+     <height>645</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(176, 196 ,222);
+border: 1px solid gray;/*设置边框的粗细，以及颜色*/</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_4">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>645</y>
+     <width>951</width>
+     <height>5</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(176, 196 ,222);
+border: 1px solid gray;/*设置边框的粗细，以及颜色*/</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_3" native="true">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>5</y>
+     <width>940</width>
+     <height>58</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #70D8DB     ;</string>
+   </property>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>9</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushButton_3{
+background-color: rgb(135, 206 ,235);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;
+border-style: outset;
+}
+#pushButton_3:hover{
+background-color:rgb(0 ,191 ,255); 
+color: black;
+}
+#pushButton_3:pressed{
+background-color:rgb(135, 206 ,235);
+border-style: inset;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>返回</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>178</x>
+      <y>13</y>
+      <width>531</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>楷体</family>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>学生科技成果管理信息系统(学生)</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exit_btn">
+    <property name="geometry">
+     <rect>
+      <x>835</x>
+      <y>9</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#exit_btn{
+background-color: rgb(135, 206 ,235);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;
+border-style: outset;
+}
+#exit_btn:hover{
+background-color:rgb(0 ,191 ,255); 
+color: black;
+}
+#exit_btn:pressed{
+background-color:rgb(135, 206 ,235);
+border-style: inset;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>退出</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>679</x>
+     <y>64</y>
+     <width>61</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>楷体</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 127);</string>
+   </property>
+   <property name="text">
+    <string>欢迎您：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>741</x>
+     <y>64</y>
+     <width>202</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(240, 248 ,255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="Line" name="line_10">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>0</y>
+     <width>942</width>
+     <height>5</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(176, 196 ,222);
+border: 1px solid gray;/*设置边框的粗细，以及颜色*/</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

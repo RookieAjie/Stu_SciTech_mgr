@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>user.jpg</file>
+        <file>dusk.jpg</file>
+        <file>sky.png</file>
+        <file>jiaoshiyi.jpg</file>
+        <file>logo.png</file>
+        <file>viewp.jpg</file>
+        <file>viewp2.jpg</file>
+        <file>logo2.png</file>
+        <file>logo3.png</file>
+    </qresource>
+</RCC>

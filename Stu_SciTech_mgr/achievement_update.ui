@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>achievement_update</class>
+ <widget class="QWidget" name="achievement_update">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>317</width>
+    <height>372</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>317</width>
+    <height>372</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>317</width>
+    <height>372</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>修改科技成果</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/logo.png</normaloff>:/logo.png</iconset>
+  </property>
+  <property name="toolTip">
+   <string>这是成就信息修改界面！</string>
+  </property>
+  <widget class="QWidget" name="widget_5" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>120</y>
+     <width>291</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>87</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>修 改 后 简 介：</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>0</y>
+      <width>141</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>96</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>修改后的成果名：</string>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="dateEdit">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>35</y>
+      <width>141</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*border: 1px solid gray;/*设置边框的粗细，以及颜色*/
+/*border-top-left-radius: 10px;/*设置圆角的大小*/
+/*border-bottom-left-radius: 10px;
+/*padding: 0 8px;/*如果没有内容光标在开始往后移动0.8像素点*/
+
+
+</string>
+    </property>
+    <property name="calendarPopup">
+     <bool>true</bool>
+    </property>
+    <property name="date">
+     <date>
+      <year>2021</year>
+      <month>1</month>
+      <day>1</day>
+     </date>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>35</y>
+      <width>87</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>修 改 后 时 间：</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>70</y>
+      <width>171</width>
+      <height>70</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>20</y>
+     <width>201</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>楷体</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>修改科技成果信息</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>192</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>11</y>
+      <width>60</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>成果编号：</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>75</x>
+      <y>11</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>301</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>272</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>黑体</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 0, 0);</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>待审批</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>通过</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>不通过</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>280</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>黑体</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255,165,0);</string>
+   </property>
+   <property name="text">
+    <string>审批意见：</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="show_material">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>80</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#show_material
+{
+	background-color: #F0F8FF; /*背景色*/ 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; /*边界圆滑*/
+	border-color: #6495ED;
+	font: bold 14px;
+	min-width:2em;
+	color:black; /*字体颜色*/
+	font-family:楷体;
+	padding: 5px;
+}
+ 
+#show_material:hover
+{
+	background-color: #00CED1;
+}
+ 
+#show_material:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+#show_material:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}</string>
+   </property>
+   <property name="text">
+    <string>查看证明材料</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="return_btn">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>330</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#return_btn
+{
+	background-color: #F8F8FF; /*背景色*/ 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; /*边界圆滑*/
+	border-color: #DCDCDC;
+	font: bold 14px;
+	min-width:2em;
+	color:black; /*字体颜色*/
+	font-family:宋体;
+	padding: 5px;
+}
+ 
+#return_btn:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+#return_btn:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+#return_btn:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}</string>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="updaAchi_btn">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>330</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#updaAchi_btn
+{
+	background-color: #F8F8FF; /*背景色*/ 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; /*边界圆滑*/
+	border-color: #DCDCDC;
+	font: bold 14px;
+	min-width:2em;
+	color:black; /*字体颜色*/
+	font-family:宋体;
+	padding: 5px;
+}
+ 
+#updaAchi_btn:hover
+{
+	background-color: #ff0000;
+}
+ 
+#updaAchi_btn:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+#updaAchi_btn:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}</string>
+   </property>
+   <property name="text">
+    <string>确认修改</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
